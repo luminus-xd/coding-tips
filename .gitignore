@@ -1,2 +1,7 @@
 .next
 node_modules
+
+# lockfiles
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
