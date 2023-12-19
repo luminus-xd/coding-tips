@@ -1,0 +1,28 @@
+# Grid
+
+CSS の`display: grid;`は、要素をグリッドレイアウトにするためのプロパティです。  
+以下に基本的な使い方を示します。
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+}
+```
+
+上記のコードでは、`.container` クラスを持つ要素がグリッドレイアウトになり、3 列 3 行のグリッドが作成されます。各セルの大きさは 100px に設定されています。
+
+また、`grid-template-columns`と`grid-template-rows`プロパティを使用すると、各列と行の大きさを個別に設定することができます。
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 100px auto 200px;
+  grid-template-rows: auto 100px;
+}
+```
+
+上記のコードでは、1 列目の幅が 100px、2 列目の幅が残りの空間、3 列目の幅が 200px に設定されています。また、1 行目の高さが残りの空間、2 行目の高さが 100px に設定されています。
+
+このように、`display: grid;`を使用すると、柔軟なレイアウトを実現することができます。
